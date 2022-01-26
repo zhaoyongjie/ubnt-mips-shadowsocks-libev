@@ -31,7 +31,7 @@ How to set dnsmasq and iptables
   ```docker build --tag ubnt-mips-shadowsocks-libev .```  
   
 4. 启动容器  Start the container  
-  ```docker run -idt --name ubnt-mips-shadowsocks-libev ubnt-mips-shadowsocks-libev```
+  ```docker run -it --name ubnt-mips-shadowsocks-libev ubnt-mips-shadowsocks-libev```
   
 5. 从容器中拷贝  Copy from docker container  
   ```docker cp ubnt-mips-shadowsocks-libev:/opt/ss-mips/ss-bin .```

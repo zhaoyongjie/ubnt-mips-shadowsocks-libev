@@ -3,7 +3,7 @@
 green="\033[0;32m"
 end="\033[0m"
 # shadowsocks version
-shadowsocks_ver=3.3.4
+shadowsocks_ver=3.3.5
 # mbedtls
 mbedtls_ver=2.6.0
 # pcre
@@ -34,7 +34,7 @@ wget --no-check-certificate https://tls.mbed.org/download/mbedtls-$mbedtls_ver-g
 
 echo -e "$green Installing pcre...$end"
 cd
-wget https://ftp.pcre.org/pub/pcre/pcre-$pcre_ver.tar.bz2 \
+wget https://ftp.exim.org/pub/pcre/pcre-$pcre_ver.tar.bz2 \
     && tar xvf pcre-$pcre_ver.tar.bz2 \
     && cd pcre-$pcre_ver \
     && ./configure --host=$host --prefix=$prefix_path/pcre --disable-shared --enable-utf8 --enable-unicode-properties \
